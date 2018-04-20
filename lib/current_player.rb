@@ -1,7 +1,10 @@
 def turn_count(board)
-  counter = 0
-  x_or_o = ["X", "O"]
-  x_or_o.each do |turns|
-    puts "turns"
+ counter = 0
+
+  board.each do |turn|
+    if turn != " "
+      counter += 1
+    end
   end
+  return counter
 end
